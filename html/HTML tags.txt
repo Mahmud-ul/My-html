@@ -1,0 +1,122 @@
+
+Html Tag List
+Last edited: 1m ago
+Head Tag
+<!DOCTYPE html>
+<html></html>
+<head></head>
+<title></title>
+<meta>
+<link>
+<base></base>
+Layout Tag
+ 
+<header></header>
+<body></body>
+<main></main>
+<footer></footer>
+<template></template>
+Style Tag
+ 
+<style></style>
+Script Tag
+<noscript></noscript>
+<script></script>
+Grid Tag
+<div></div>
+<section></section>
+<article></article>
+<aside></aside>
+Formatting Tag
+ 
+<span></span>
+<p></p>
+<a></a>
+<b></b>
+<small></small>
+<strong></strong>
+<i></i>
+<em><em>
+<cite></cite>
+<del></del>
+<s></s>
+<sub></sub>
+<sup></sup>
+<u></u>
+<ins></ins>
+<mark></mark>
+<q></q>
+<code></code>
+<kbd></kbd>
+<pre></pre>
+<samp></samp>
+<var></var>
+<address></address>
+<br>
+<hr>
+Comments Tag
+<blockquote></blockquote>
+<bdo><bdo>
+<details></details>
+<summary></summary>
+<dialog open></dialog>
+Headlines Tag
+ 
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+Menu & List Tag
+ 
+<nav></nav>
+<ol></ol>
+<ul></ul>
+<li></li>
+Media Tag
+<img></img>
+<audio></audio>
+<source></source>
+<video></video>
+<iframe ></iframe >
+<embed></embed>
+<figure></figure>
+<figcaption></figcaption>
+<svg></svg>
+Control Tag
+<button></button>
+Table Tag
+ 
+<table></table>
+<caption></caption>
+<colgroup></colgroup>
+<col></col>
+<thead></thead>
+<tbody></tbody>
+<tfoot></tfoot>
+<tr></tr>
+<th></th>
+<td></td>
+ 
+<dl></dl>
+<dt><dt>
+<dd></dd>
+Form Tag
+
+  
+ 
+<form></form>
+<datalist></datalist>
+<select></select>
+<optgroup></optgroup>
+<option></option>
+<fieldset></fieldset>
+<legend></legend>
+<label></label>
+<input></input>
+<textarea></textarea>
+<meter></meter>
+<progress></progress>
+<output></output>
+ 

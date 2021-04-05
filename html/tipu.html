@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Infernape</title>
+		<link rel="icon" href="infernape.png" type="image/icon type">
+		<style>
+			.flex-container{
+				display:flex;
+				flow-flex: row wrap;
+				justify-content: left;
+				align-items: top;
+			}
+			.flex-container > div {
+				background-color: #f1f1f1;
+				width: 100%;
+				text-align: center;
+				line-height: 30px;
+				font-size: 19px;
+			}
+			a:link {				 
+				 background-color: transparent;
+				 text-decoration: none;
+				 font-style: italic;
+				 font-weight: bold;
+				 padding: 3.5% 26%;
+			}
+			a:hover {
+				color: black;	
+				text-decoration: none;
+				background: #99ccff;
+			}
+			a:active {
+				color: #ffff1a;
+				background: #99ccff;
+			}
+			header{
+				color: #ffffff;
+				float: left;
+				width:100%;
+				z-index: -1;
+				position: fixed;
+				font-size: 23px;
+				font-style: italic;
+			}
+			form{
+				color: hsla(0, 100%, 100%);
+				font-size: 15px;
+				line-height: 15px;
+				position: absolute;
+				right:0;
+				top:10px;
+			}
+			body{
+				background-image: url("back.png");
+				background-repeat: repeat-x;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+			nav{
+				width:99.4%;
+				float:right;
+				position: absolute;
+				top:85px;
+			}	
+			#active{
+				color: #ffff1a;
+				background: #ff6600;
+			}
+			.sub1{
+				display: none;
+			}
+			 a:hover.sub1{
+				display: block;
+				position: absolute;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<div class="flex-container">
+				<image/icon rel="icon" src="infernape.png" alt="logo" type="image/icon type" height="100px" width="150px" float="left">
+				<h2>I n f e r n a p e</h2>
+			</div>	
+		</header>
+		<section>
+			<login>
+				<form>	
+					<lebel for="log">User id:</lebel>
+					<input style="float:right; width:150px" type="text" id="login" name="login"><br><br>
+					<lebel for="pwd">Password:</lebel>
+					<input type="password" id="pwd" name="password" style="width:150px"><br><br>
+					<input style="float:right; width:75px; height:23px; font-weight:bold" type="submit" value="Log in">
+				</form>
+			</login>
+			<nav>
+				<div><br></div>
+				<div class="flex-container">
+						<div id="active"><a href="#">Home</a></div>
+						<div><a href="#">Game</a></div>
+							<div class="sub1">
+								<ul>
+									<li><a href="#">neogeo</a></li>
+									<li><a href="#">nfs</a></li>
+								</ul>
+							</div>
+						<div><a href="#">Movie</a></div>
+						<div><a href="#">Series</a></div>
+						<div><a href="#">Cartoon</a></div>
+						<div><a href="#">Funny</a></div>
+						<div><a href="#">Music</a></div>
+						<div><a href="#">App</a></div>
+						<div><a href="#">Picture</a></div>
+						<div><a href="#">Creative</a></div>
+				</div>
+			</nav>
+			
+		</section>
+	</body>
+	
+</html>

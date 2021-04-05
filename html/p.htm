@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			body{
+				background: url("panda.jpg") no-repeat;
+				background-size: cover;
+				font-family: arial;
+			}
+			ul {
+				list-style: none;
+				margin: 0px;
+				padding: 0px;
+				color: white;
+			}
+			ul li{
+				width: 150px;
+				background: black;
+				text-align: center;
+				float: left;
+				border: 1px solid #fff;
+				height: 50px;
+				color: #fff;
+				font-size: 20px;
+				line-height: 50px;
+			}
+			ul li:hover{
+				background: crimson;
+				float: left;
+			}
+			ul ul{
+				display: none;
+				
+			}
+			ul li:hover > ul{
+				display: block; 
+				overflow: hidden;
+			}
+			ul ul ul{
+				position: absolute;
+				top: 59px;
+				margin-left: 150px;
+				width: 150px;
+			}
+			
+		</style>
+	</head>	
+	
+	<body>
+			<div class="lst">	
+			<ul>
+				<li>Home</li>
+				<li>Game
+					<ul>
+						<li>neo-geo
+							<ul>
+								<li>asdfasdf</li>
+								<li>121212</li>
+							</ul>
+						</li>
+						<li>nfs</li>
+					</ul>
+				</li>
+				<li>Cartoon
+					<ul>
+						<li>Pokemon</li>
+						<li>Digimon</li>
+					</ul>
+				</li>
+				<li>Funny</li>
+				<li>Music</li>
+				<li>App</li>
+				<li>Picture</li>
+				<li>Creative</li>						
+			</ul>	
+		</div>	
+	</body>	
+</html>

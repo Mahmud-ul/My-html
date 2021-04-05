@@ -1,0 +1,832 @@
+<!DATATYPE html>
+<html>
+	<head>
+		<title>demo site</title>
+		<style>
+			.flex-container{
+				display:flex;
+				flow-flex: row wrap;
+				justify-content: center;
+				align-items: center;
+				background: white;
+			}
+			.flex-container > div {
+				width: 100%;
+				text-align: center;
+				font-size: 19px;
+			}
+			header{
+				position: absolute;
+				width:100%;
+			}
+			a:link{
+				text-decoration: none;
+				color: black;
+			}
+			nav h1{
+				color: #004d99;
+				float: 	left;
+				font-size: 38px;
+			}
+			nav{
+				padding: 0px 30px;
+			}
+			nav div h4{
+			color: white;
+			border: solid;
+			background: #ff0066;
+			border-radius: 50px;
+			padding :10px 30px;
+			width: 150px;
+			}
+			page1>div{
+				padding-bottom: 10px;
+				padding-left: 100px;
+				padding-right: 100px;
+				border: hidden;
+				background: #f2f2f2;
+				border-radius: 50px;
+				position: absolute;
+				left:200px;
+				top:90px;
+			}
+			page1 div p{
+				font-size: 75px;
+				color: red;
+			}
+			div span{
+				color: blue;
+			}
+			page1 div h4{
+				text-align: center;
+			}
+			box p1 a{
+				border: hidden;
+				border-radius: 50px;
+				background: #ff0066;
+				color: white;
+				padding: 20px;
+				float: left;
+			}
+			box p2 a{
+				border: hidden;
+				border-radius: 50px;
+				background: white;
+				color: #002b80;
+				padding: 20px;
+				float: right;
+			}
+			page2 div p2b1{
+				position: absolute;
+				left:200px;
+				top:650px;
+			}
+			page2 div p2b2{
+				position: absolute;
+				left:800px;
+				top:630px;
+			}
+			page2 div p2b3{
+				position: absolute;
+				left:1100px;
+				top:630px;
+			}
+			page2 div p2b4{
+				position: absolute;
+				left:800px;
+				top:830px;
+			}
+			page2 div p2b5{
+				position: absolute;
+				left:1100px;
+				top:830px;
+			}
+			page2 div boxp2{
+				background: red;
+			}
+			
+			page2 div box1{
+				position: absolute;
+				left: 200px;
+				top: 1050px;
+				border: hidden;
+				box-shadow: 1px 3px #888888;
+				padding: 0px 30px;
+				text-align: center;
+			}
+			page2 div box2{
+				position: absolute;
+				left:500px;
+				top:1050px;
+				border: hidden;
+				box-shadow: 1px 3px #888888;
+				padding: 0px 30px;
+				text-align: center;
+			}
+			page2 div box3{
+				position: absolute;
+				left:800px;
+				top:1050px;
+				border: hidden;
+				box-shadow: 1px 3px #888888;
+				padding: 0px 30px;
+				text-align: center;
+			}
+			page2 div box4{
+				position: absolute;
+				left:1100px;
+				top:1050px;
+				border: hidden;
+				box-shadow: 1px 3px #888888;
+				padding: 0px 30px;
+				text-align: center;
+			}
+			page2 div p{
+				font-size: 50px;
+			}
+			.p2h{
+				font-size: 35px;
+			}
+			.pera{
+				font-size: 20px;
+			}
+			page2 div p span{
+				color: #004d99;
+			}
+			page3 p3box1{
+				position: absolute;
+				border: hidden;
+				border-radius: 10px;
+				padding: 100px 20px 20px;
+				left: 350px;
+				top: 1180px;
+				background: #f2f2f2;
+			}
+			page3 p3box1 h3{
+				text-align: center;
+			}
+			page3 p3box2{
+				position: absolute;			
+				left: 800px;
+				top: 1180px;
+			}
+			p3box2 p1 a{
+				border: hidden;
+				border-radius: 20px;
+				background: #ff0066;
+				color: white;
+				padding: 0px 20px;
+				float: left;
+			}
+			p3box2 p2 a{
+				border: hidden;
+				border-radius: 20px;
+				background: #003399;
+				color: white;
+				padding: 0px 35px;
+				float: right;
+			}
+			page4 p4b1{
+				position: absolute;
+				left: 100px;
+				top: 1600px;
+				border: solid;
+				padding: 10px;
+				background: #000099;
+				color: white;
+			}
+			page4 p4b2{
+				position: absolute;
+				left: 500px;
+				top: 1600px;
+				border: solid;
+				padding: 10px;
+				background: #000099;
+				color: white;
+			}
+			page4 p4b3{
+				position: absolute;
+				left: 900px;
+				top: 1600px;
+				border: solid;
+				padding: 10px;
+				background: #000099;
+				color: white;
+			}
+			page4 p4b4{
+				position: absolute;
+				left: 100px;
+				top: 1850px;
+				border: solid;
+				padding: 10px;
+				background: #000099;
+				color: white;
+			}
+			page4 p4b5{
+				position: absolute;
+				left: 500px;
+				top: 1850px;
+				border: solid;
+				padding: 10px;
+				background: #000099;
+				color: white;
+			}
+			page4 p4b6{
+				position: absolute;
+				left: 900px;
+				top: 1850px;
+				border: solid;
+				padding: 10px;
+				background: #000099;
+				color: white;
+			}
+			page5 p5b1{
+				position: absolute;
+				left: 300px;
+				top: 2120px;
+			}
+			p5b1 p1 a{
+				border: hidden;
+				border-radius: 20px;
+				background: #003399;
+				color: white;
+				padding: 10px 15px;
+				float: left;
+			}
+			page6 ti{
+				position: absolute;
+				left: 380px;
+				top: 2600px;
+				text-align: Center; 
+				font-size: 40px;
+			}
+			page6 n1{
+				position: absolute;
+				left: 150px;
+				top: 2800px;
+				font-size: 20px;
+				border: hidden;
+				padding: 150px 10px 30px;
+				background: #f2f2f2;
+				text-align: center;
+				width: 180px;
+			}
+			page6 n2{
+				position: absolute;
+				left: 370px;
+				top: 2800px;
+				font-size: 20px;
+				border: hidden;
+				padding: 150px 10px 30px;
+				background: #f2f2f2;
+				text-align: center;
+				width: 180px;
+			}
+			page6 n3{
+				position: absolute;
+				left: 590px;
+				top: 2800px;
+				font-size: 20px;
+				border: hidden;
+				padding: 150px 10px 30px;
+				background: #f2f2f2;
+				text-align: center;
+				width: 180px;
+			}
+			page6 n4{
+				position: absolute;
+				left: 810px;
+				top: 2800px;
+				font-size: 20px;
+				border: hidden;
+				padding: 150px 10px 30px;
+				background: #f2f2f2;
+				text-align: center;
+				width: 180px;
+			}
+			page6 n5{
+				position: absolute;
+				left: 1030px;
+				top: 2800px;
+				font-size: 20px;
+				border: hidden;
+				padding: 150px 10px 30px;
+				background: #f2f2f2;
+				text-align: center;
+				width: 180px;
+			}
+			page6 d1{
+				position: absolute;
+				left: 250px;
+				top: 3100px;
+				background: #ff0066;
+				padding: 10px 40px;
+				color: white;
+			}
+			page6 d2{
+				position: absolute;
+				left: 550px;
+				top: 3100px;
+				background: #ff0066;
+				padding: 10px 40px;
+				color: white;
+			}
+			page6 d3{
+				position: absolute;
+				left: 750px;
+				top: 3100px;
+				background: #ff0066;
+				padding: 10px 40px;
+				color: white;
+			}
+			page6 d4{
+				position: absolute;
+				left: 950px;
+				top: 3100px;
+				background: #ff0066;
+				padding: 10px 40px;
+				color: white;
+			}
+			page7 ti{
+				position: absolute;
+				left: 530px;
+				top: 3350px;
+				text-align: center;
+			}
+			page7 b1{
+				position: absolute;
+				left: 300px;
+				top: 3500px;
+				width: 200px;
+			}
+			page7 b2{
+				position: absolute;
+				left: 600px;
+				top: 3500px;
+				width: 200px;
+			}
+			page7 b3{
+				position: absolute;
+				left: 900px;
+				top: 3500px;
+				width: 200px;
+			}
+			page7 ti2{
+				position: absolute;
+				left: 530px;
+				top: 3750px;
+				text-align: center;
+			}
+			page7 c1{
+				position: absolute;
+				left: 180px;
+				top: 3950px;
+				width: 250px;
+				Height: 350px;
+				border: solid;
+				box-shadow: 2px 5px;
+				text-align: center;
+			}
+			page7 c2{
+				position: absolute;
+				left: 540px;
+				top: 3920px;
+				width: 230px;
+				Height: 420px;
+				border: solid;
+				box-shadow: 2px 5px;
+				text-align: center;
+			}
+			page7 c3{
+				position: absolute;
+				left: 900px;
+				top: 3950px;
+				width: 250px;
+				Height: 350px;
+				border: solid;
+				box-shadow: 2px 5px;
+				text-align: center;
+			}
+			page7 c1 a{
+				border: Hidden;
+				border-radius: 20px;
+				background: #ff0066;
+				color: white;
+				padding: 5px;
+				text-align: center;
+			}
+			page7 c2 a{
+				border: Hidden;
+				border-radius: 20px;
+				background: #ff0066;
+				color: white;
+				padding: 5px;
+				text-align: center;
+			}
+			page7 c3 a{
+				border: Hidden;
+				border-radius: 20px;
+				background: #ff0066;
+				color: white;
+				padding: 5px;
+				text-align: center;
+			}
+			page8 t1 {
+				position: absolute;
+				left: 150px;
+				top: 4450px;
+			}
+			page8 t2 {
+				position: absolute;
+				left: 150px;
+				top: 4600px;
+			}
+			page8 t3 {
+				position: absolute;
+				left: 150px;
+				top: 4670px;
+			}
+			page8 t4 {
+				position: absolute;
+				left: 150px;
+				top: 4740px;
+			}
+			page8 t5 {
+				position: absolute;
+				left: 150px;
+				top: 4810px;
+			}
+			page8 t6 {
+				position: absolute;
+				left: 150px;
+				top: 4880px;
+			}
+			page8 t7 {
+				position: absolute;
+				left: 150px;
+				top: 4950px;	
+			}
+			page9 s1 {
+				position: absolute;
+				left: 200px;
+				top: 5050px;	
+			}
+			page9 s2 a{
+				position: absolute;
+				left: 1100px;
+				top: 5130px;	
+				border: hidden;
+				border-radius: 20px;
+				padding: 5px;
+				background: #e6f3ff;
+			}
+			page9 c1{
+				position: absolute;
+				left: 130px;
+				top: 5550px;
+				width: 400px;
+				Height: 350px;
+			}
+			page9 c2{
+				position: absolute;
+				left: 540px;
+				top: 5550px;
+				width: 400px;
+				Height: 350px;
+			}
+			page9 c3{
+				position: absolute;
+				left: 950px;
+				top: 5550px;
+				width: 400px;
+				Height: 350px;
+			}
+			page10 t1{
+				position: absolute;
+				left: 100px;
+				top: 5850px;
+			}
+			page10 t2{
+				position: absolute;
+				left: 650px;
+				top: 6100px;
+			}
+			page10 t3{
+				position: absolute;
+				left: 850px;
+				top: 6100px;
+			}
+			page10 t4{
+				position: absolute;
+				left: 1050px;
+				top: 6100px;
+			}
+		</style>
+	</head>
+	<body>	
+		<header>	
+				<nav class="flex-container">
+					<div><h1>Traders</h1></div>
+					<div><a href="#">home</a></div>
+					<div><a href="#">About</a></div>
+					<div><a href="#">Services</a></div>
+					<div><a href="#">Portfolio</a></div>
+					<div><a href="#">Pages</a></div>
+					<div><a href="#">Shop</a></div>
+					<div><a href="#">Blog</a></div>
+					<div><a href="#">Contact</a></div>
+					<div><a href="#">|</a></div>
+					<div><h4>+880 123456789</h4></div>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<page1>
+				<div>
+				<p><span>Discover New<br>Ideas</span> Build Your <br><p2 style="color:#002b80;">Business</p2></p>
+				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit sed<br>
+				doeiusmod tempor incididunt ut labore er dolore magna aliqua.</h4>
+				<box>
+					<p1><a href="#">GET STARTED</a></p1>
+					<p2><a href="#">OUR SERVICE</a></p2>
+				</box>
+				</div>
+			</page1>
+			<page2>
+				<div>
+				<p2b1>
+					<h3>Company Feature --</h3>
+					<p>Make Your Business<br>Life Simple<b> With Join<br><span>Our Agency</b></span><br></p>
+					<p class="pera">learn ipsum dolor sit amet, consectetur adipisicing elit, sed do<br>
+					eiusmod tempor incididunt ut labore et dolore magna alique. Ut<br> 
+					enim ad minim venam quis nostrud exercitation</p>
+				</p2b1>
+				<p2b2>
+					<h3 class="p2h">Accounting<br> And Finance</h3>
+					<p class="pera">learn ipsum dolor sit amet,<br> consectetur adipisicing<br> elit, sed do</p>
+				</p2b2>
+				<p2b3>
+					<h3 class="p2h">Business<br> Consulting</h3>
+					<p class="pera">learn ipsum dolor sit amet,<br> consectetur adipisicing<br> elit, sed do</p>
+				</p2b3>
+				<p2b4>
+					<h3 class="p2h">Social Media<br> Marketing</h3>
+					<p class="pera">learn ipsum dolor sit amet,<br> consectetur adipisicing<br> elit, sed do</p>
+				</p2b4>
+				<p2b5>
+					<h3 class="p2h">Investment<br> Planning</h3>
+					<p class="pera">learn ipsum dolor sit amet,<br> consectetur adipisicing<br> elit, sed do</p>
+				</p2b5>
+					<box1><b><h3>Most Trusted <br>Partner</h3></box1>
+					<box2><h3>Financial <br>Agency</h3></box2>
+					<box3><h3>Business<br>Consulting</h3></box3>
+					<box4><h3>Social Media<br>Marketing</h3></b></box4>
+				</div>
+			</page2>
+			<page3>
+				<p3box1>
+					<h3>Book Truck & Part Load<br>Service</h3>
+					<form>
+						<input style="height: 40px; width: 200px;" type="text" id="place" name="place" value="*From Mumbai"><br><br>
+						<input style="height: 40px; width: 200px;" type="text" id="des" name="place" value="*Destination"><br><br>
+						<input style="color:white; background:#ff0066; height: 40px; width: 200px;" type="Submit" id="des" name="place" value="Get Started"><br>
+					</form>
+				</p3box1>
+				<p3box2>
+					<p style="color:red">DOWNLOAD APPS</p>
+					<h1 style="font-size: 30px">Download Our Apps <br>To Life Very Fast</h1>
+					<p style="font-size: 20px">learn ipsum dolor sit amet, consectetur<br> adipisicing elit, sed
+						doeiusmod tempor<br> incididunt ut labore et dolore magna alique.
+						<br>Utenim ad minim venam quis nostrud<br> exercitation</p>
+					<p1><a href="#">Available On<br><b>GOOGLE STORE</b></a></p1>
+					<p2><a href="#">Available On<br><b>WINDOWS</b></a></p2>
+				</p3box2>
+			</page3>
+			<page4>	
+				<p4b1>
+					<div style="color: red">OUR SERVICE</div>
+					<div style="font-size: 40px"> We Provide<br> Best Services</div>
+					<div>learn ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do
+						eiusmod tempor incididunt ut labore et<br> dolore magna alique. Ut
+						enim ad minim venam<br> quis nostrud exercitation</div>
+				</p4b1>
+				<p4b2>
+					<div><b>Graphics Design</b></div><br><br>
+					<div>learn ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do
+						eiusmod tempor incididunt ut labore et<br> dolore magna alique. Ut
+						enim ad minim venam<br> quis nostrud exercitation.<br>learn ipsum dolor sit amet, 
+						consectetur adipisicing<br> elit, sed doeiusmod tempor incididunt ut labore
+						et<br> dolore magna alique. Ut enim ad minim venam<br> quis nostrud exercitation</div>
+				</p4b2>
+				<p4b3>
+					<div><b>Digital Marketing</b></div><br><br>
+					<div>learn ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do
+						eiusmod tempor incididunt ut labore et<br> dolore magna alique. Ut
+						enim ad minim venam<br> quis nostrud exercitation.<br>learn ipsum dolor sit amet, 
+						consectetur adipisicing<br> elit, sed doeiusmod tempor incididunt ut labore
+						et<br> dolore magna alique. Ut enim ad minim venam<br> quis nostrud exercitation</div>
+				</p4b3>
+				<p4b4>
+					<div><b>User Reserch</b></div><br><br>
+					<div>learn ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do
+						eiusmod tempor incididunt ut labore et<br> dolore magna alique. Ut
+						enim ad minim venam<br> quis nostrud exercitation.<br>learn ipsum dolor sit amet, 
+						consectetur adipisicing<br> elit, sed doeiusmod tempor incididunt ut labore
+						et<br> dolore magna alique. Ut enim ad minim venam<br> quis nostrud exercitation</div>
+				</p4b4>
+				<p4b5>
+					<div><b>Bank & Insurance</b></div><br><br>
+					<div>learn ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do
+						eiusmod tempor incididunt ut labore et<br> dolore magna alique. Ut
+						enim ad minim venam<br> quis nostrud exercitation.<br>learn ipsum dolor sit amet, 
+						consectetur adipisicing<br> elit, sed doeiusmod tempor incididunt ut labore
+						et<br> dolore magna alique. Ut enim ad minim venam<br> quis nostrud exercitation</div>
+				</p4b5>
+				<p4b6>
+					<div><b>Investment Planning</b></div><br><br>
+					<div>learn ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do
+						eiusmod tempor incididunt ut labore et<br> dolore magna alique. Ut
+						enim ad minim venam<br> quis nostrud exercitation.<br>learn ipsum dolor sit amet, 
+						consectetur adipisicing<br> elit, sed doeiusmod tempor incididunt ut labore
+						et<br> dolore magna alique. Ut enim ad minim venam<br> quis nostrud exercitation</div>
+				</p4b6>
+			</page4>
+			<page5>
+				<p5b1>
+					<div style="color: red">WHY CHOOSE US</div><br>
+					<div style="font-size: 40px">Creative Agency For<br> Your Business</div><br>
+					<div>learn ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor<br> incididunt ut labore et dolore magna alique. Ut
+						enim ad minim venam<br> quis nostrud exercitation.<br>learn ipsum dolor sit amet, 
+						consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt 
+						ut labore et dolore magna alique. Ut enim ad minim venam<br> quis nostrud exercitation.</div>
+					<list>
+						<ul>
+							<li>learn ipsum dolor sit amet, consectetur adipisicing
+								elit, sed doeiusmod tempor incididunt<br> ut labore et
+								dolore magna alique. Ut enim ad minim venam
+								quis nostrud exercitation</li><br>
+							<li>learn ipsum dolor sit amet, consectetur adipisicing
+								elit, sed doeiusmod tempor incididunt<br> ut labore et
+								dolore magna alique. Ut enim ad minim venam
+								quis nostrud exercitation</li>
+						</ul>
+					</list>
+					<p1><a href="#">Read more...</b></a></p1>
+				</p5b1>
+			</page5>
+			<page6>
+				<ti>
+					<div><b>Meet The Team Of Professionals That<br> We Have <span style="color: red">Consulations</span></b></div>
+				</ti>
+				<n1><div><b>jonny jonson</b><br><span style="color: red">Developer</span></div></n1>
+				<n2><div><b>Hulk jonson</b><br><span style="color: red">Consulting Manager</span></div></n2>
+				<n3><div><b>Ralf jonson</b><br><span style="color: red">Project Manager</span></div></n3>
+				<n4><div><b>Athena jonson</b><br><span style="color: red">Developer</span></div></n4>
+				<n5><div><b>Rikishi jonson</b><br><span style="color: red">Developer</span></div></n5>
+				
+				<d1><div>Company History</div><br><div style="font-size: 30px">We Are Expert<br> & <b>Professional<br> Agency</b></div></d1>
+				<d2><div style="font-size: 20px">Project<br> Complate<br><br><b style="font-size: 40px">568</b><br>---</div></d2>
+				<d3><div style="font-size: 20px">Win Of<br> Awards<br><br><b style="font-size: 40px">568</b><br>---</div></d3>
+				<d4><div style="font-size: 20px">Exclusive<br> Consultant<br><br><b style="font-size: 40px">568</b><br>---</div></d4>
+			</page6>
+			<page7>
+				<ti>
+					<div style="color: red">CLIENT'S REVIEW<br><b style="font-size: 30px; color: #000099">What's Our Client's Say<br> About Us</b></div>
+				</ti>
+				<b1>
+					<div><b>Habijabi Habijabi</b><div style="color: #ff0066">Web Designer</div><hr><br>learn ipsum dolor sit amet, 
+					    consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna alique. Ut enim ad minim venam
+						quis nostrud exercitation.</div>
+				</b1>
+				<b2>
+					<div><b>Habijabi Habijabi</b><div style="color: #ff0066">Web Designer</div><hr><br>learn ipsum dolor sit amet, 
+					    consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna alique. Ut enim ad minim venam
+						quis nostrud exercitation.</div>
+				</b2>
+				<b3>
+					<div><b>Habijabi Habijabi</b><div style="color: #ff0066">Web Designer</div><hr><br>learn ipsum dolor sit amet, 
+					    consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna alique. Ut enim ad minim venam
+						quis nostrud exercitation.</div>
+				</b3>
+				<ti2>
+					<div style="color: red">PRICING PLAN<br><b style="font-size: 30px; color: #000099">We Provide A Suitable <br> Pricing Plan</b></div>
+				</ti2>
+				<c1>
+					<div><br>BASIC PLAN<br><div>Easy and Join For All User</div><br><div style="font-size: 30px"> $ 29.99<br>monthly<br><br><a href="#" style="font-size: 15px">CHOOSE PLAN</a><br><br></div></div>
+					<list>
+						<ul style="float: left; font-size: 17px; text-align: left">
+							<li>Unlimited Free Update</li>
+							<li>Unlimited Disk Dreator</li>
+							<li>Unlimited User Support</li>
+							<li>Money Transfer System</li>
+						</ul>
+					</list>
+				</c1>
+				<c2>
+					<div><br><br>STANDARD PLAN<br><div>Easy and Join For All User</div><br><div style="font-size: 30px"> $ 49.99<br>monthly<br><br><a href="#" style="font-size: 15px">CHOOSE PLAN</a><br><br></div></div>
+					<list>
+						<ul style="float: left; font-size: 17px; text-align: left">
+							<li>Unlimited Free Update</li>
+							<li>Unlimited Disk Dreator</li>
+							<li>Unlimited User Support</li>
+							<li>Money Transfer System</li>
+							<li>Online Support</li>
+						</ul>
+					</list>
+				</c2>
+				<c3>
+					<div><br>BASIC PLAN<br><div>Easy and Join For All User</div><br><div style="font-size: 30px"> $ 25.99<br>monthly<br><br><a href="#" style="font-size: 15px">CHOOSE PLAN</a><br><br></div></div>
+					<list>
+						<ul style="float: left; font-size: 17px; text-align: left">
+							<li>Unlimited Free Update</li>
+							<li>Unlimited Disk Dreator</li>
+							<li>Unlimited User Support</li>
+							<li>Money Transfer System</li>
+						</ul>
+					</list>
+				</c3>
+			</page7>
+			<page8>
+				<t1>
+					<div style="padding: 20px 24px 8px 10px; background: #e6ccff; color: #000099"><b>How to create a Flate Vector Illustrator in Affinity Design</b><br><br>
+						learn ipsum dolor sit amet, consectetur adipisicing
+						elit, sed doeiusmod tempor incididunt ut labore et
+						dolore magna alique. Ut enim ad minim venam
+						quis nostrud exercitation.<br>learn ipsum dolor sit amet, consectetur adipisicing
+						elit, sed doeiusmod tempor incididunt ut labore et
+						dolore magna alique. Ut enim ad minim venam
+						quis nostrud exercitation.<br> Learn ipsum dolor sit amet, consectetur adipisicing
+						elit, sed doeiusmod tempor incididunt ut labore et
+						dolore magna alique.</div>	
+				</t1>	
+				<t2>
+					<div><b style="padding: 20px 750px 20px 10px; background: #e6ccff; color: #000099">How to create a Flate Vector Illustrator in Affinity Design</b></div><br><br>
+				</t2>
+				<t3>
+					<div><b style="padding: 20px 750px 20px 10px; background: #e6ccff; color: #000099">How to create a Flate Vector Illustrator in Affinity Design</b></div><br><br>
+				</t3>
+				<t4>
+					<div><b style="padding: 20px 750px 20px 10px; background: #e6ccff; color: #000099">How to create a Flate Vector Illustrator in Affinity Design</b></div><br><br>
+				</t4>
+				<t5>
+					<div><b style="padding: 20px 750px 20px 10px; background: #e6ccff; color: #000099">How to create a Flate Vector Illustrator in Affinity Design</b></div><br><br>
+				</t5>
+				<t6>
+					<div><b style="padding: 20px 750px 20px 10px; background: #e6ccff; color: #000099">How to create a Flate Vector Illustrator in Affinity Design</b></div><br><br>
+				</t6>
+				<t7>
+					<div><b style="padding: 20px 750px 20px 10px; background: #e6ccff; color: #000099">How to create a Flate Vector Illustrator in Affinity Design</b></div><br><br>
+				</t7>
+			</page8>
+			<page9>
+				<s1>
+					<div style="font-size: 40px">Company News<br>Our Letest <span style="color: red"><b>Article & </span><br> <span style="color: blue">Tips For You</span></b></div>
+				</s1>
+				<s2>
+					<a href="#" style="font-size: 20px;">View All More</a>
+				</s2>
+				<c1>
+					<div><a href="#" style="font-size: 20px;padding: 10px; background: #ff3385; color: white"> Branding</a><span style="padding: 10px"> Date: June 19,2019 </span><span>Comments: 0</span></div><br><br><br>
+					<div style="text-align: left"><b>learn ipsum dolor sit amet, consectetur adipisicing <br> elit, sed doeiusmod 
+					sed doeiusmod tempor<br> incididunt ut labore et dolore magna alique.</b></div><br>
+					<div><a href="#" style="float: left;text-align: left; padding: 10px; border-radius: 20px; background:#ccdcff">READ MORE</a></div>
+				</c1>
+				<c2>
+					<div><a href="#" style="font-size: 20px;padding: 10px; background: #ff3385; color: white"> Fashion</a><span style="padding: 10px"> Date: June 19,2019 </span><span>Comments: 0</span></div><br><br><br>
+					<div style="text-align: left"><b>learn ipsum dolor sit amet, consectetur adipisicing <br> elit, sed doeiusmod 
+					sed doeiusmod tempor<br> incididunt ut labore et dolore magna alique.</b></div><br>
+					<div><a href="#" style="float: left;text-align: left; padding: 10px; border-radius: 20px; background:#ccdcff">READ MORE</a></div>
+				</c2>
+				<c3>
+					<div><a href="#" style="font-size: 20px;padding: 10px; background: #ff3385; color: white"> Travel</a><span style="padding: 10px"> Date: June 19,2019 </span><span>Comments: 0</span></div><br><br><br>
+					<div style="text-align: left"><b>learn ipsum dolor sit amet, consectetur adipisicing <br> elit, sed doeiusmod 
+					sed doeiusmod tempor<br> incididunt ut labore et dolore magna alique.</b></div><br>
+					<div><a href="#" style="float: left;text-align: left; padding: 10px; border-radius: 20px; background:#ccdcff">READ MORE</a></div>
+					
+				</c3>				
+			</page9>
+			<page10>
+				<t1>
+					<hr style="width: 310%"><br><br><br><br><br><br><br><br><br><br><br><br><div style="font-size: 50px; padding: 0px 20px"><b>#</b></div>
+					<div style="color:#6666ff">learn ipsum dolor sit amet, consectetur adipisicingelit,<br> sed doeiusmod sed doeiusmod tempor 
+					incididunt ut<br> labore et dolore magna alique. learn ipsum dolor sit amet
+					</div>
+				</t1>
+				<t2>
+					<div><span style="font-size: 30px;color:black"><b>Company</b></span><span style="color:#6666ff"><br><br>About<br><br>Service<br><br>Blog</span></div>
+				</t2>
+				<t3>
+					<div><span style="font-size: 30px;color:black"><b>Product</b></span><span style="color:#6666ff"><br><br>Features<br><br>API<br><br>Customers</span></div>
+				</t3>
+				<t4>
+					<div><span style="font-size: 30px;color:black"><b>Channels</b></span><span style="color:#6666ff"><br><br>Careers<br><br>Contact<br><br>Search</span></div>
+				</t4>
+			</page10>
+		</section>
+	</body>
+</html>
+<hr style="width: 100%">

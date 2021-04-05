@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Tipu's web</title>
+		<style>
+			header{
+				colour: black;
+				background: #ccccff;
+				padding: 1px;
+				text-align: center;
+				
+			}
+			
+			side {
+				float: left;
+				width: 50%;
+				color: rgb(0, 230, 138)
+			}
+			
+			side2 {
+				float: left;
+				width: 50%;
+				color: rgb(0, 230, 138)
+			}
+			
+			side3 {
+				float: left;
+				width: 50%;
+				color: rgb(0, 230, 138)
+			}
+			
+			side4 {
+				float: left;
+				width: 50%;
+				color: rgb(0, 230, 138)
+			}
+			
+			footer {
+				color:black;
+				background:;
+				text-align:center;
+				padding:1px;
+				font-size:20px;
+			}
+			
+			section:after {
+					content:"";
+					display:table;
+					clear:both;
+			}
+			
+			footer {
+				background:rgb(191, 191, 191);
+				text-align:center;
+				padding:40px;
+				float: below;
+			}
+			
+			button{
+				color: White;
+				background:rgb(51, 204, 51);
+				float:right;
+				width:100px;
+				height:35px;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Create Account</h1>	
+		</header>
+		<section>
+			<b>
+			<side>
+				<form action="">
+						<br><lebel for="fn">First name*</lebel><br>
+						<input type="text" id="fn" name="first name" value="Inter your First name">
+				</form>
+			</side>
+			
+			<side2>
+				<form action="">
+						<br><lebel for="ln">Last name*</lebel><br>
+						<input type="text" id="ln" name="last name" value="Inter your Last name"><br><br>
+				</form>
+			</side2>
+			
+			<form action="">
+				<lebel style="color: rgb(0, 230, 138);" for="fn">Email*</lebel><br>
+				<input style="width:90%" type="text" id="email" name="email" value="Inter your email">
+			</form>
+			
+			<side3>
+				<form action="">
+						<br><lebel for="ps2">Password*</lebel><br>
+						<input type="text" id="ps2" name="password" value="Inter your Password"><br><br>
+						<lebel for="gen">Gender:</lebel><br>
+						<input type="radio" id="gen" name="male" value="male">
+						<lebel for="gen">Male</lebel>
+						<input type="radio" id="gen" name="female" value="female">
+						<lebel for="gen">Female</lebel><br><br>
+						<lebel for="in">Source of Income</lebel><br>
+						<input list="em"> 
+							<datalist id="em"> 
+								<option value="Employed" /> 
+								<option value="Unemployed" /> 
+							</datalist><br><br>
+						<lebel for="pic">Upload Your Picture</lebel><br>
+						<input type="file" id="pic" name="picture" value="picture">
+						
+						
+				</form>
+			</side3>
+			
+			<side4>
+				<form action="">
+						<br><lebel for="ps"> Confirm Password*</lebel><br>
+						<input type="text" id="ps" name="password" value="Inter your Password again"><br><br>
+						<lebel for="ho">Hobbies</lebel><br>
+						<input type="checkbox" id="ho" name="hobby" value="hobby">
+						<lebel for="ho">Music</lebel>
+						<input type="checkbox" id="ho" name="hobby" value="hobby">
+						<lebel for="ho">Sports</lebel>
+						<input type="checkbox" id="ho" name="hobby" value="hobby">
+						<lebel for="ho">Travel</lebel>
+						<input type="checkbox" id="ho" name="hobby" value="hobby">
+						<lebel for="ho">Movies</lebel><br><br>
+						<lebel for="ho">Income</lebel><br>
+						<input type="range" id="in" name="in" min="0" max="1000000"><br><br>
+						<lebel for="age">Age</lebel><br>
+						<input type="text" id="age" name="age" value="18"><br><br>
+				</form>
+			</side4>
+			
+			<form action="">
+				<br><lebel style="color: rgb(0, 230, 138);" for="bio">Bio</lebel><br>
+				<input style="width:90%; height:50px; float:below;" type="text" id="email" name="email" value=""><br><br>
+			</form>
+			<footer>
+				<button>Create</button>
+			</footer>
+			</b>
+		</section>	
+	</body>
+	
+</html>

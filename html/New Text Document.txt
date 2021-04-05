@@ -1,0 +1,21 @@
+<!DOCTYPE hlml>
+<html lang="en-US">
+<head>
+<title>Page title</title>
+</head>
+<body>
+<h1> this is header1 </h1>
+<p title="its tooltip" style="color:green;
+">this is a paragraph with a break <br> its next line. </p>
+<a href="www.google.com"> Google</a>
+<img border ="0" src="tipu.jpg" alt="Tipu.jpg" height= "500" width="300">
+<!-- comment -->
+<hr>
+<pre>
+tipu
+
+tipu
+</pre>
+</body>
+</html>
+"color:blue; background-color:red; font-family: courier; font-size: 150%; text-align: center;"
